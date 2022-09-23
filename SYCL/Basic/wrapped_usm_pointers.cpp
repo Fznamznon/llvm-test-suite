@@ -3,7 +3,7 @@
 // RUN: %GPU_RUN_PLACEHOLDER %t.out
 // RUN: %ACC_RUN_PLACEHOLDER %t.out
 
-//==---------- wrapped_usm_pointer.cpp - test pointers in struct --------------==//
+//==---------- wrapped_usm_pointer.cpp - test pointers in struct ---------==//
 //
 // Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
 // See https://llvm.org/LICENSE.txt for license information.
