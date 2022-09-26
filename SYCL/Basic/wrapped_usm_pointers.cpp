@@ -93,5 +93,13 @@ int main() {
   for (int i = 0; i < NumOfElements; ++i)
     Fail = Checker(SimpleArr[i]);
 
+  // Free allocated memory.
+  sycl::free(NonTrivialObj.Data, Q);
+  sycl::free(SimpleObj.Data, Q);
+  sycl::free(WrapperOfSimpleObj.Obj.Data, Q);
+
+  for (int i = 0; i < NumOfElements; ++i)
+    sycl::free(SimpleArr[i].Data, Q);
+
   return Fail;
 }
