@@ -31,7 +31,7 @@ struct NonTrivial {
   NonTrivial(int *D, int A) : Data(D), Addition(A) {}
 };
 
-struct NonTrivialDerived : NonTrivial{
+struct NonTrivialDerived : NonTrivial {
   int AA = 0;
   NonTrivialDerived(int *D, int A) : NonTrivial(D, A) {}
 };
